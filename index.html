@@ -53,7 +53,7 @@
                             <lable for="password">Password</lable>
                             <div class="password-container">
                                 <input type="password" id="password" />
-                                <p onclick="changeType()">Show</p>
+                                <p onclick="changeType(event)">Show</p>
                             </div>
                         </div>
                         <div class="forget">
@@ -80,15 +80,59 @@
                 <img src="./images/thank-you.png" alt=" ">
             </div>
         </div>
+
+        <div class="center-explore">
+            <div class="explore">
+                <div class="explore-left">
+                    <h2>Explore collaborative articles</h2>
+                    <p>We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.</p>
+                </div>
+                <div class="explore-right">
+                    <div class="circular-box">Marketing</div>
+                    <div class="circular-box">Public Administration</div>
+                    <div class="circular-box">Healthcare</div>
+                    <div class="circular-box">Engineering</div>
+                    <div class="circular-box">Talent Management</div>
+                    <div class="circular-box">IT Services</div>
+                    <div class="circular-box">Sustainability</div>
+                    <div class="circular-box">Business Administration</div>
+                    <div class="circular-box">Telecommunication</div>
+                    <div class="circular-box">Show all</div>
+                </div>
+    
+                <div class="right-job">
+                    <h2>Find the right job or internship for you </h2>
+                </div>
+                <div class="suggested-searches">
+                    <div class="box">
+                        <div class="circular-box">Engineering</div>
+                        <div class="circular-box">Business Development</div>
+                        <div class="circular-box">Finance</div>
+                        <div class="circular-box">Administrative Assistent</div>
+                        <div class="circular-box">Retail Associate</div>
+                        <div class="circular-box">Customer Service</div>
+                        <div class="circular-box">Operations</div>
+                        <div class="circular-box">Information Technology</div>
+                        <div class="circular-box">Marketing</div>
+                        <div class="circular-box">Human Resources</div>
+                    </div>
+                    <div>
+                        <div class="circular-box">Show all</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <script>
-        function changeType() {
+        function changeType(event) {
             const element = document.getElementById('password');
             if (element.type === 'password') {
                 element.type = 'text';
+                event.target.innerHTML = 'Hide';
             } else {
                 element.type = 'password';
+                event.target.innerHTML = 'Show';
             }
         }
     </script>
