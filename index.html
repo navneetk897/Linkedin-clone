@@ -51,7 +51,10 @@
                         </div>
                         <div class="password">
                             <lable for="password">Password</lable>
-                            <input type="password" id="password" />
+                            <div class="password-container">
+                                <input type="password" id="password" />
+                                <p onclick="changeType()">Show</p>
+                            </div>
                         </div>
                         <div class="forget">
                             <a href="#">Forgot password?</a>
@@ -79,5 +82,15 @@
         </div>
     </main>
     <footer></footer>
+    <script>
+        function changeType() {
+            const element = document.getElementById('password');
+            if (element.type === 'password') {
+                element.type = 'text';
+            } else {
+                element.type = 'password';
+            }
+        }
+    </script>
 </body>
 </html>

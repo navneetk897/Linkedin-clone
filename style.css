@@ -109,11 +109,12 @@ li p {
 .login {
     display: flex;
     padding: 100px;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
 }
 
 .login-form {
-    flex-basis: 40%;
+    flex-basis: min(25%, 448px);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -126,7 +127,7 @@ li p {
 }
 
 .thank-you {
-    flex-basis: 50%;
+    flex-basis: min(625px, 50%);
 }
 
 .login > .thank-you img {
@@ -156,11 +157,35 @@ li p {
 }
 
 .password input {
+    width: 290px;
+    height: 40px;
+    border: 0px solid transparent;
+    outline: none;
+}
+
+.password-container {
+    padding: 3px;
+    position: relative;
     width: 350px;
     height: 50px;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 10px 0 40px 0;
+    margin-bottom: 40px;
+    z-index: 1000;
+}
+
+.password-container:focus-within {
+    outline: 2px solid #0A66C2;
+}
+
+.password-container > p {
+    position: absolute;
+    top: 15px;
+    left: 300px;
+    color: #0A66C2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .forget  {
@@ -252,3 +277,4 @@ li p {
     color: black;
     font-weight: 500;
 }
+
