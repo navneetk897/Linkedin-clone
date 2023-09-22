@@ -164,6 +164,7 @@ li p {
 }
 
 .password-container {
+    margin-top: 10px;
     padding: 3px;
     position: relative;
     width: 350px;
@@ -175,7 +176,7 @@ li p {
 }
 
 .password-container:focus-within {
-    outline: 2px solid #0A66C2;
+    outline: 1.5px solid black;
 }
 
 .password-container > p {
