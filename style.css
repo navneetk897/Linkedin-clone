@@ -368,9 +368,14 @@ li p {
 .post-job-section {
     background-color: rgba(255, 166, 0, 0.475);
     height: 264px;
+}
+
+.post-job-inner {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 100%;
+    margin-left: 150px;
 }
 
 .post-job-section h1 {
@@ -378,7 +383,6 @@ li p {
     flex-basis: 350px;
     font-weight: 400;
     font-size: 2.1rem;
-    margin-left: 150px;
 }
 
 .post {
