@@ -363,3 +363,28 @@ li p {
 }
 
 
+/* Post job section*/
+
+.post-job-section {
+    background-color: rgba(255, 166, 0, 0.475);
+    height: 264px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-job-section h1 {
+    color: #B24020;
+    flex-basis: 350px;
+    font-weight: 400;
+    font-size: 2.1rem;
+    margin-left: 150px;
+}
+
+.post {
+    color: #0A66C2;
+    border: 1px solid #0A66C2;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
